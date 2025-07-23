@@ -121,19 +121,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       provider.isLoading
                           ? null
                           : () => registerUser(context, provider),
-                  child:
-                      provider.isLoading
-                          ? const CircularProgressIndicator()
-                          : CustomContainer(
-                            color: AppColors.textHeaderColor,
-                            child: Center(
-                              child: CustomText(
-                                text: 'Sign Up',
-                                fontSize: 20,
-                                color: AppColors.glass,
-                              ),
-                            ),
-                          ),
+                  child: CustomContainer(
+                    color: AppColors.textHeaderColor,
+                    child: Center(
+                      child: CustomText(
+                        text: 'Sign Up',
+                        fontSize: 20,
+                        color: AppColors.glass,
+                      ),
+                    ),
+                  ),
                 );
               },
             ),

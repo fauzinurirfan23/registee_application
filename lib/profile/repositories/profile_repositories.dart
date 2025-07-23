@@ -3,7 +3,8 @@ import 'package:http/http.dart' as http;
 import '../models/profile_model.dart';
 
 class ProfileRepository {
-  final String baseUrl = 'http://10.0.2.2:3000';
+  //final String baseUrl = 'http://10.0.2.2:3000';
+  final String baseUrl = 'http://192.168.0.105:3000';
 
   Future<ProfileModel?> getProfileById(int userId) async {
     final url = Uri.parse('$baseUrl/profile/$userId');

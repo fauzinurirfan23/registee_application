@@ -111,19 +111,16 @@ class _SignInScreenState extends State<SignInScreen> {
                         provider.isLoading
                             ? null
                             : () => loginUser(context, provider),
-                    child:
-                        provider.isLoading
-                            ? const CircularProgressIndicator()
-                            : CustomContainer(
-                              color: AppColors.textHeaderColor,
-                              child: Center(
-                                child: CustomText(
-                                  text: 'Sign In',
-                                  fontSize: 20,
-                                  color: AppColors.glass,
-                                ),
-                              ),
-                            ),
+                    child: CustomContainer(
+                      color: AppColors.textHeaderColor,
+                      child: Center(
+                        child: CustomText(
+                          text: 'Sign In',
+                          fontSize: 20,
+                          color: AppColors.glass,
+                        ),
+                      ),
+                    ),
                   );
                 },
               ),

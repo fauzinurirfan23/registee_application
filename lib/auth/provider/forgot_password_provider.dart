@@ -14,7 +14,8 @@ class ForgotPasswordProvider with ChangeNotifier {
     _message = null;
     notifyListeners();
 
-    final String baseUrl = 'http://10.0.2.2:3000';
+    //final String baseUrl = 'http://10.0.2.2:3000';
+    final String baseUrl = 'http://192.168.0.105:3000';
 
     try {
       final response = await http.post(
