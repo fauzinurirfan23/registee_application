@@ -5,8 +5,7 @@ import 'package:register_app/home/models/users_model.dart';
 import 'package:http/http.dart' as http;
 
 class UserRepositories {
-  //final String baseUrl = 'http://10.0.2.2:3000';
-  final String baseUrl = 'http://192.168.0.105:3000';
+  final String baseUrl = 'http://10.0.2.2:3000';
 
   Future<GetUser> fetchUsers({int page = 1, int limit = 10}) async {
     final response = await http.get(
